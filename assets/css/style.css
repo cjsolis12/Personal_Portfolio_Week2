@@ -20,11 +20,11 @@ header{
 
 }
 
-
+/* Navbar Links */
 .navbar ul{
     display: flex;
     list-style-type: none;
-     ;
+     
 }
 
 ul a {
