@@ -6,6 +6,9 @@
     margin: 0;
 }
 
+body{
+    background-color: #d4c3db;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -17,6 +20,14 @@ header{
 
 }
 
+
 .navbar ul{
     display: flex;
+    list-style-type: none;
+     ;
+}
+
+ul a {
+text-decoration: none;
+color: #ffffff;
 }
