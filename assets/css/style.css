@@ -11,16 +11,19 @@
 
 body{
     background-color: #ece9e9;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Header */
 @media screen and (max-width:768px) {
-    header{
+    header, nav ul, .main-content{
         flex-direction: column;
     }
     }
+
+    
 header{
+    border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +48,11 @@ margin: 10px;
 }
 
 /* Hero Image */
+.background-hero{
+    position: relative;
+    background-image: url("../images/header.jpg");
+    height: 200px;
+}
 .hero-image{
     position: relative;
     width: 200px; 
@@ -56,4 +64,20 @@ margin: 10px;
 .hero-image img {
   width: 100%;
    height: auto;
+  }
+
+  .hero-text{
+    padding:20px;
+    position: absolute;
+    bottom: -15px;
+    left:700px;
+    border: 2px solid rgb(184, 137, 19);
+  }
+
+
+  /* Main content */
+
+  .main-content{
+    display: flex;
+    flex-direction: row;
   }
