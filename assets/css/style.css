@@ -70,9 +70,15 @@ margin: 10px;
   }
 
   .hero-text{
-    position: absolute;
-    padding:20px;
-    border: 2px solid rgb(184, 137, 19);
+    display: inline-block;
+    position: relative;
+    padding:30px;
+    top: -70px;
+    left: 427.6px;
+    border: 1px solid rgb(184, 137, 19);
+    font-size: larger;
+    color: #ece9e9;
+    font-style: italic;
   }
 
 
