@@ -88,7 +88,7 @@ color: rgb(22, 95, 100);
   /* Main content */
 .main-container{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto auto;
     gap: 1em;
     margin: 60px;
     color: var(--dark-text);
@@ -98,8 +98,6 @@ color: rgb(22, 95, 100);
     display: grid;
     grid-template-columns: 25% 75%;
     padding: 30px;
-    
-
   }
   
   .content-headings{
@@ -112,6 +110,7 @@ color: rgb(22, 95, 100);
   .content-info{
     text-align: left;
     font-weight: 300;
+    margin-left: 40px;
   }
 
   /* Grid Layout for sample work */
