@@ -60,9 +60,9 @@ color: rgb(22, 95, 100);
 }
 
 /* Hero Image */
-.background-hero{
+.hero-banner{
     display: flex;
-    background-image: linear-gradient(to bottom right, rgb(39, 146, 141), rgb(121, 161, 161));
+    background-image: linear-gradient(to bottom right, rgb(132, 199, 196), rgb(121, 161, 161));
     height: 250px;
     flex-direction: row;
     align-items: center;
@@ -81,7 +81,7 @@ color: rgb(22, 95, 100);
   .hero-text{
     border: 1px solid rgb(184, 137, 19);
     font-size: larger;
-    color: #ece9e9;
+    color: #f3f3f3;
   }
 
 
@@ -103,7 +103,7 @@ color: rgb(22, 95, 100);
   }
   
   .content-headings{
-    border-right: solid ;
+    border-right: solid rgba(64, 66, 66, 0.377);
     grid-row-end: auto;
     text-align: center;
     font-weight: 400;
