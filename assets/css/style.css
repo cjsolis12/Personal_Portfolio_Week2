@@ -39,15 +39,17 @@ header{
 
 /* Navbar Links */
 
-nav ul{
+nav ul , .contact-me-links{
     display: flex;
     list-style-type: none;
      
 }
 
-ul a {
-
-margin: 10px;
+ul a{
+    margin: 10px;
+}
+ul a:hover {
+color: rgb(22, 95, 100);
 }
 
 /* Hero Image */
@@ -79,13 +81,25 @@ margin: 10px;
   /* Main content */
 .main-container{
     display: grid;
-    grid-template-columns: 100%;
     grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
     margin: 60px;
 }
 
   .main-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 30px;
+    
+
+  }
+  
+  .content-headings{
+    border-right: solid ;
+    grid-row-end: auto;
+    text-align: center;
+  }
+
+  .content-info{
+    text-align: left;
   }
