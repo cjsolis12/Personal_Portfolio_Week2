@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,400;1,700&display=swap');
+
 /* Universal selector */
 
 :root {
-    --dark-text:#14171f;
+    --dark-text:#46433f;
 }
 *{
     box-sizing: border-box;
@@ -11,7 +14,7 @@
 
 body{
     background-color: #ece9e9;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a{
@@ -34,12 +37,16 @@ header{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ece9e9;
-    color: var();
+    color: var(--dark-text);
+}
+
+.header-name{
+    font-weight: 400;
 }
 
 /* Navbar Links */
 
-nav ul , .contact-me-links{
+nav ul , .contact{
     display: flex;
     list-style-type: none;
      
@@ -84,6 +91,7 @@ color: rgb(22, 95, 100);
     grid-template-rows: repeat(4, 1fr);
     gap: 1em;
     margin: 60px;
+    color: var(--dark-text);
 }
 
   .main-content{
@@ -98,8 +106,10 @@ color: rgb(22, 95, 100);
     border-right: solid ;
     grid-row-end: auto;
     text-align: center;
+    font-weight: 400;
   }
 
   .content-info{
     text-align: left;
+    font-weight: 300;
   }
