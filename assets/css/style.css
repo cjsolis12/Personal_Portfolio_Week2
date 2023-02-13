@@ -4,7 +4,8 @@
 /* Universal selector */
 
 :root {
-    --dark-text:#46433f;
+    --dark-text:#302d2a;
+    --light-color: #dad7db;
 }
 *{
     box-sizing: border-box;
@@ -13,7 +14,7 @@
 }
 
 body{
-    background-color: #ece9e9;
+    background-color:#dad7db ;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -30,13 +31,13 @@ a{
 
     
 header{
-    border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
+    margin: 30px 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #ece9e9;
+    background-color: var(--light-color);
     color: var(--dark-text);
 }
 
@@ -62,9 +63,9 @@ color: rgb(22, 95, 100);
 /* Hero Image */
 .hero-banner{
     display: flex;
-    background-image: linear-gradient(to bottom right, rgb(132, 199, 196), rgb(121, 161, 161));
-   
-    /* align-items: center; */
+    background-image: linear-gradient(to bottom right, rgb(40, 5, 43), rgb(98, 69, 109));
+   justify-content: center;
+    align-items: center;
 }
  
 .hero-image{
@@ -76,10 +77,15 @@ color: rgb(22, 95, 100);
   }
 
   .hero-text{
-    font-size: larger;
-    color: #f3f3f3;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 20px;
+    color:  var(--light-color);
+    
   }
 
+  .hero-text p{
+    font-style: italic;
+  }
 
   /* Main content */
 .main-container{
