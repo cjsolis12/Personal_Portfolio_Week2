@@ -74,6 +74,7 @@ color: rgb(22, 95, 100);
   background-image: url(/assets/images/IMG_3382\ \(2\).jpg);
   background-size: cover;
    border-radius: 50%;
+   border: 2px solid var(--light-color);
   }
 
   .hero-text{
