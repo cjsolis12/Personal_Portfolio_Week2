@@ -46,14 +46,14 @@ header{
 
 /* Navbar Links */
 
-nav ul , .contact{
+nav ul , .contact-me-links{
     display: flex;
     list-style-type: none;
      
 }
 
 ul a{
-    margin: 10px;
+    margin: 15px;
 }
 ul a:hover {
 color: rgb(22, 95, 100);
@@ -63,23 +63,19 @@ color: rgb(22, 95, 100);
 .hero-banner{
     display: flex;
     background-image: linear-gradient(to bottom right, rgb(132, 199, 196), rgb(121, 161, 161));
-    height: 250px;
-    flex-direction: row;
-    align-items: center;
+   
+    /* align-items: center; */
 }
+ 
 .hero-image{
-    width: 200px; 
-    height: 80%; 
-    overflow: hidden; 
-    /* border-radius: 50%;  */
-}
-.hero-image img {
-  width: 100%;
-   height: auto;
+  width: 150px;
+  height: 150px;
+  background-image: url(/assets/images/IMG_3382\ \(2\).jpg);
+  background-size: cover;
+   border-radius: 50%;
   }
 
   .hero-text{
-    border: 1px solid rgb(184, 137, 19);
     font-size: larger;
     color: #f3f3f3;
   }
