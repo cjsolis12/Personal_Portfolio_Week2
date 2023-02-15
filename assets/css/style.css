@@ -1,11 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,400;1,700&display=swap');
 
 /* Universal selector */
-
 :root {
     --dark-text:#302d2a;
     --light-color: #dad7db;
+    --dark-purple: rgb(40, 5, 43);
 }
 *{
     box-sizing: border-box;
@@ -13,79 +12,84 @@
     margin: 0;
 }
 
+/* Styles for whole page */
 body{
     background-color:#dad7db ;
     font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.5;
+}
+img{
+  width: 100%;
 }
 
+/* Links */
 a{
     text-decoration: none;
     color: var(--dark-text);
+    font-size: 1em;
 }
+nav ul , .contact-me-links{
+  display: flex;
+  list-style-type: none;   
+}
+ul a{
+  margin: 15px;
+}
+ul a:hover {
+  color: var(--dark-purple);
+}
+/* End of Link Styling */
+
+
+
 /* Header */
 @media screen and (max-width:768px) {
     header, nav ul, .main-content{
         flex-direction: column;
     }
     }
-
     
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    margin: 30px 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--light-color);
-    color: var(--dark-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 30px 35px;
+  background-color: var(--light-color);
+  color: var(--dark-text);
 }
 
-.header-name{
+.header-name, .content-headings{
     font-weight: 400;
+    color: var(--dark-purple);
 }
+/* End of Header with navbar */
 
-/* Navbar Links */
 
-nav ul , .contact-me-links{
-    display: flex;
-    list-style-type: none;
-     
-}
-
-ul a{
-    margin: 15px;
-}
-ul a:hover {
-color: rgb(22, 95, 100);
-}
-
-/* Hero Image */
+/* Hero Section */
 .hero-banner{
     display: flex;
     background-image: linear-gradient(to bottom right, rgb(40, 5, 43), rgb(98, 69, 109));
-   justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 200px;
 }
  
 .hero-image{
-  width: 150px;
-  height: 150px;
-  background-image: url(/assets/images/IMG_3382\ \(2\).jpg);
-  background-size: cover;
-   border-radius: 50%;
-   border: 2px solid var(--light-color);
+    width: 150px;
+    height: 150px;
+    background-image: url(/assets/images/IMG_3382\ \(2\).jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid var(--light-color);
   }
 
   .hero-text{
     font-family: 'Poppins' , sans-serif;
     font-size: 20px;
     color:  var(--light-color);
-    
-  }
-
-  .hero-text p{
-    font-style: italic;
   }
 
   /* Main content */
@@ -116,31 +120,32 @@ color: rgb(22, 95, 100);
     margin-left: 40px;
   }
 
-  /* Grid Layout for sample work */
+/* Work Samples Section */
+.sample-work{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
 
-  .sample-work{
-    padding: 16px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 3, 1fr;
-    gap: 16px;
-  }
+.work-grid-item1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
-  .sample-work > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+.work-grid-item3{
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 
-  .main-image{
-    grid-column: span 2;
+.website-label{
+ color: var(--dark-purple);
+ background-color: var(--light-color);
+ 
+}
 
-  }
-  .horiseon-site{
-    grid-row: span 2;
-  }
-
+/* 
   /* Responsive styling for work sample images */
   @media screen and (max-width: 1024px){
     
-}
+} */
