@@ -43,10 +43,9 @@ ul a:hover {
 /* End of Link Styling */
 
 
-
 /* Header */
 @media screen and (max-width:768px) {
-    header, nav ul, .main-content{
+    header, nav ul, .main-content, .main-container {
         flex-direction: column;
     }
     }
@@ -72,7 +71,7 @@ header{
 .hero-banner{
     display: flex;
     background-image: linear-gradient(to bottom right, rgb(40, 5, 43), rgb(98, 69, 109));
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 200px;
 }
@@ -90,6 +89,7 @@ header{
     font-family: 'Poppins' , sans-serif;
     font-size: 20px;
     color:  var(--light-color);
+    padding-left: 50px;
   }
 
   /* Main content */
@@ -145,7 +145,16 @@ header{
 }
 
 /* 
-  /* Responsive styling for work sample images */
+  /* Responsive styling */
   @media screen and (max-width: 1024px){
     
-} */
+}
+
+
+/* contact me Navbar */
+
+
+/* Resume Template */
+a[href$=".pdf"]::after {
+  content:url("/assets/images/pdf-file (1).png") ;
+}
