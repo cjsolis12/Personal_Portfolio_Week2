@@ -32,13 +32,18 @@ a{
 }
 nav ul , .contact-me-links{
   display: flex;
-  list-style-type: none;   
+  list-style-type: none; 
+  justify-content: space-around;  
 }
+
 ul a{
   margin: 15px;
+  padding: 10px;
 }
 ul a:hover {
-  color: var(--dark-purple);
+  color: var(--light-color);
+  background-color: var(--dark-purple);
+  border-radius: 5px;
 }
 /* End of Link Styling */
 
@@ -115,7 +120,6 @@ header{
   }
 
   .content-info{
-    text-align: left;
     font-weight: 300;
     margin-left: 40px;
   }
