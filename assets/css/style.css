@@ -26,22 +26,21 @@ img {
 
 /* Responsive design for smaller screens */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   header,
   nav ul {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .hero-image {
     display: none;
   }
 }
 
 @media screen and (max-width: 760px) {
-  .main-content, .sample-work, .content-headings{
-    display: relative;
+  .main-content, .sample-work{
     grid-template-columns: none;
   }
 }
@@ -159,10 +158,11 @@ header {
   grid-row-end: 3;
 }
 
-.website-label > a {
- color: var(--light-color);
- background-color: rgb(116, 110, 116);
- margin-top: -5rem;
+
+.website-label{
+ color: var(--dark-purple);
+ background-color: rgb(167, 163, 167);
+ font-family: "Open Sans", sans-serif;
 }
 
 /* Resume Template */
