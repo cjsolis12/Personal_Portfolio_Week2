@@ -16,13 +16,30 @@
 body{
     background-color:#dad7db ;
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
-    width: 100vw;
     line-height: 1.5;
 }
 img{
   width: 100%;
 }
+
+/* Responsive design for smaller screens */
+
+@media screen and (max-width:760px) {
+  header, nav ul{
+      flex-direction: column;
+  }
+  }
+
+  @media screen and (max-width: 760px){
+    .hero-image{
+    display: none;
+    }
+  }
+  /* @media screen and (max-width: 760px){
+   .main-content, .sample-work{
+    display: none;
+    }
+  } */
 
 /* Links */
 a{
@@ -49,12 +66,7 @@ ul a:hover {
 
 
 /* Header */
-@media screen and (max-width:768px) {
-    header, nav ul, .main-content, .main-container {
-        flex-direction: column;
-    }
-    }
-    
+
 header{
   display: flex;
   justify-content: space-between;
@@ -63,6 +75,7 @@ header{
   margin: 30px 35px;
   background-color: var(--light-color);
   color: var(--dark-text);
+  width: auto;
 }
 
 .header-name, .content-headings{
@@ -99,11 +112,7 @@ header{
 
   /* Main content */
 .main-container{
-    display: grid;
-    grid-template-rows: auto 1fr auto auto;
-    gap: 1em;
     margin: 60px;
-    color: var(--dark-text);
 }
 
   .main-content{
@@ -127,7 +136,7 @@ header{
 /* Work Samples Section */
 .sample-work{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   padding: 0 1rem;
 }
@@ -143,19 +152,14 @@ header{
 }
 
 .website-label{
- color: var(--dark-purple);
- background-color: var(--light-color);
- 
+ margin-top: -2rem;
+ background-color: aqua;
 }
 
-/* 
   /* Responsive styling */
   @media screen and (max-width: 1024px){
     
 }
-
-
-/* contact me Navbar */
 
 
 /* Resume Template */
