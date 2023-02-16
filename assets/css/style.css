@@ -104,7 +104,7 @@ header {
 .hero-image {
   width: 150px;
   height: 150px;
-  background-image: url(/assets/images/IMG_3382\\(2\).jpg);
+  background-image: url(/assets/images/IMG_3382\ \(2\).jpg);
   background-size: cover;
   border-radius: 50%;
   border: 2px solid var(--light-color);
@@ -172,4 +172,5 @@ a[href$=".pdf"]::after {
 /* footer */
 footer{
   text-align: center;
+  padding: 5px;
 }
