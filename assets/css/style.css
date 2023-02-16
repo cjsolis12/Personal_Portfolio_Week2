@@ -159,10 +159,10 @@ header {
   grid-row-end: 3;
 }
 
-.website-label {
-  margin-top: -2rem;
-  background-color: var(--dark-purple);
-  color: aliceblue;
+.website-label > a {
+ color: var(--light-color);
+ background-color: rgb(116, 110, 116);
+ margin-top: -5rem;
 }
 
 /* Resume Template */
