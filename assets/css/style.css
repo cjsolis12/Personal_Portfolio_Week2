@@ -17,6 +17,8 @@ body {
   background-color: #dad7db;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
 }
 img {
   width: 100%;
@@ -38,11 +40,12 @@ img {
 }
 
 @media screen and (max-width: 760px) {
-  .main-content {
-    display: grid;
+  .main-content, .sample-work, .content-headings{
+    display: relative;
     grid-template-columns: none;
   }
 }
+
 
 /* Links */
 a {
@@ -62,9 +65,7 @@ ul a {
   padding: 10px;
 }
 ul a:hover {
-  color: var(--light-color);
-  background-color: var(--dark-purple);
-  border-radius: 5px;
+  text-decoration: underline;
 }
 /* End of Link Styling */
 
@@ -118,9 +119,9 @@ header {
 }
 
 /* Main content */
-.main-container {
+/* .main-container {
   margin: 60px;
-}
+} */
 
 .main-content {
   display: grid;
