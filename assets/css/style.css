@@ -1,59 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,400;1,700&display=swap");
 
 /* Universal selector */
 :root {
-    --dark-text:#302d2a;
-    --light-color: #dad7db;
-    --dark-purple: rgb(40, 5, 43);
+  --dark-text: #302d2a;
+  --light-color: #dad7db;
+  --dark-purple: rgb(40, 5, 43);
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* Styles for whole page */
-body{
-    background-color:#dad7db ;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
+body {
+  background-color: #dad7db;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
-img{
+img {
   width: 100%;
 }
 
 /* Responsive design for smaller screens */
 
-@media screen and (max-width:760px) {
-  header, nav ul{
-      flex-direction: column;
+@media screen and (max-width: 760px) {
+  header,
+  nav ul {
+    flex-direction: column;
   }
-  }
+}
 
-  @media screen and (max-width: 760px){
-    .hero-image{
+@media screen and (max-width: 760px) {
+  .hero-image {
     display: none;
-    }
   }
-  /* @media screen and (max-width: 760px){
-   .main-content, .sample-work{
-    display: none;
-    }
-  } */
+}
+
+@media screen and (max-width: 760px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: none;
+  }
+}
 
 /* Links */
-a{
-    text-decoration: none;
-    color: var(--dark-text);
-    font-size: 1em;
+a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-size: 1em;
 }
-nav ul , .contact-me-links{
+nav ul,
+.contact-me-links {
   display: flex;
-  list-style-type: none; 
-  justify-content: space-around;  
+  list-style-type: none;
+  justify-content: space-around;
 }
 
-ul a{
+ul a {
   margin: 15px;
   padding: 10px;
 }
@@ -64,10 +68,9 @@ ul a:hover {
 }
 /* End of Link Styling */
 
-
 /* Header */
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,91 +81,95 @@ header{
   width: auto;
 }
 
-.header-name, .content-headings{
-    font-weight: 400;
-    color: var(--dark-purple);
+.header-name,
+.content-headings {
+  font-weight: 400;
+  color: var(--dark-purple);
 }
 /* End of Header with navbar */
 
-
 /* Hero Section */
-.hero-banner{
-    display: flex;
-    background-image: linear-gradient(to bottom right, rgb(40, 5, 43), rgb(98, 69, 109));
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
- 
-.hero-image{
-    width: 150px;
-    height: 150px;
-    background-image: url(/assets/images/IMG_3382\ \(2\).jpg);
-    background-size: cover;
-    border-radius: 50%;
-    border: 2px solid var(--light-color);
-  }
-
-  .hero-text{
-    font-family: 'Poppins' , sans-serif;
-    font-size: 20px;
-    color:  var(--light-color);
-    padding-left: 50px;
-  }
-
-  /* Main content */
-.main-container{
-    margin: 60px;
+.hero-banner {
+  display: flex;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(40, 5, 43),
+    rgb(98, 69, 109)
+  );
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
-  .main-content{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    padding: 30px;
-  }
-  
-  .content-headings{
-    border-right: solid rgba(64, 66, 66, 0.377);
-    grid-row-end: auto;
-    text-align: center;
-    font-weight: 400;
-  }
+.hero-image {
+  width: 150px;
+  height: 150px;
+  background-image: url(/assets/images/IMG_3382\\(2\).jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--light-color);
+}
 
-  .content-info{
-    font-weight: 300;
-    margin-left: 40px;
-  }
+.hero-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: var(--light-color);
+  padding-left: 50px;
+}
+
+/* Main content */
+.main-container {
+  margin: 60px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 30px;
+}
+
+.content-headings {
+  border-right: solid rgba(64, 66, 66, 0.377);
+  grid-row-end: auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+.content-info {
+  font-weight: 300;
+  margin-left: 40px;
+}
 
 /* Work Samples Section */
-.sample-work{
+.sample-work {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   padding: 0 1rem;
 }
 
-.work-grid-item1{
+.work-grid-item1 {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.work-grid-item3{
+.work-grid-item3 {
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.website-label{
- margin-top: -2rem;
- background-color: aqua;
+.website-label {
+  margin-top: -2rem;
+  background-color: var(--dark-purple);
+  color: aliceblue;
 }
-
-  /* Responsive styling */
-  @media screen and (max-width: 1024px){
-    
-}
-
 
 /* Resume Template */
 a[href$=".pdf"]::after {
-  content:url("/assets/images/pdf-file (1).png") ;
+  content: url("/assets/images/pdf-file (1).png");
+}
+
+/* footer */
+footer{
+  text-align: center;
 }
