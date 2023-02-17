@@ -11,6 +11,7 @@ This project is my personal portfolio to showcase the skills I have learned thus
 
 ![Wepage screenshot](assets/images/personal-webpage.png)
 
+https://cjsolis12.github.io/Personal_Portfolio_Week2/
 
 
 ## Credits
