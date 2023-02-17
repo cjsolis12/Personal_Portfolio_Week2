@@ -99,7 +99,7 @@ header {
 .hero-image {
   width: 150px;
   height: 150px;
-  background-image: url("/assets/images/IMG_3382\ \(1\).jpg");
+  background-image: url("assets/images/img_3382\ \(1\).jpg");
   background-size: cover;
   border-radius: 50%;
   border: 2px solid var(--light-color);
