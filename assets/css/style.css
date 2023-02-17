@@ -63,7 +63,7 @@ ul a {
   margin: 15px;
   padding: 10px;
 }
-ul a:hover {
+ul a:hover, .contact-me-links:hover {
   text-decoration: underline;
 }
 /* End of Link Styling */
