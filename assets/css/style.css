@@ -61,7 +61,7 @@ ul a {
   margin: 15px;
   padding: 10px;
 }
-ul a:hover, .contact-me-links:hover {
+ul a:hover, ul .contact-me-links:hover {
   text-decoration: underline;
 }
 /* End of Link Styling */
@@ -150,13 +150,12 @@ header {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-
-
 .website-label{
  color: var(--dark-purple);
  background-color: rgb(167, 163, 167);
  font-family: "Open Sans", sans-serif;
 }
+
 
 /* Resume Template */
 a[href$=".pdf"]::after {
