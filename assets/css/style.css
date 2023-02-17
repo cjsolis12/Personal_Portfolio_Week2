@@ -39,7 +39,8 @@ img {
 }
 
 @media screen and (max-width: 760px) {
- .main-container > .main-content{
+ .main-container > .main-content, .content-info{
+    text-align: center;
     display: block;
   }
 }
@@ -162,8 +163,10 @@ a[href$=".pdf"]::after {
   content: url("/assets/images/pdf-file (1).png");
 }
 
+
 /* footer */
 footer{
   text-align: center;
   padding: 5px;
 }
+
