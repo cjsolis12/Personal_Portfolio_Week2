@@ -25,7 +25,6 @@ img {
 }
 
 /* Responsive design for smaller screens */
-
 @media screen and (max-width: 768px) {
   header,
   nav ul {
@@ -40,11 +39,10 @@ img {
 }
 
 @media screen and (max-width: 760px) {
-  .main-content, .sample-work{
-    grid-template-columns: none;
+ .main-container > .main-content{
+    display: block;
   }
 }
-
 
 /* Links */
 a {
@@ -116,11 +114,6 @@ header {
   color: var(--light-color);
   padding-left: 50px;
 }
-
-/* Main content */
-/* .main-container {
-  margin: 60px;
-} */
 
 .main-content {
   display: grid;
