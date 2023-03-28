@@ -9,7 +9,7 @@ This project is my personal portfolio to showcase the skills I have learned thus
 
 ## Usage
 
-![Wepage screenshot](assets/images/webpageScreenshot.png)
+![Wepage screenshot](assets/images/portfolioScreenshot.png)
 
 https://cjsolis12.github.io/Personal_Portfolio_Week2/
 
